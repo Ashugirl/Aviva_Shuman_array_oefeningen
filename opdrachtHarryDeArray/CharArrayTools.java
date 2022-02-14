@@ -2,20 +2,33 @@ package be.intecbrussel.opdrachtHarryDeArray;
 
 public class CharArrayTools {
 
-    public static char[] filterAlphabet(char[] alpha){
-        for(int i = 0; i < alpha.length -1; i++){
-            // ik probeer hier te filteren op een letter om minstens te zien of dat kan, maar zelfs dit lukt niet.
-            if (alpha[i] != 'a'){
-                filterAlphabet().toString();
-                String s = "";
-                System.out.println(filterAlphabet().replace(i, s));
+    public static char[] filterAlphabet(char[] alpha) {
+
+        for (int i = 0; i < alpha.length; i++) {
+            for (int k = 0; k < alpha.length; k++) {
+                char empty = ' ';
+                char onlyAlph;
+                int j = alpha.length;
 
 
+                if ((alpha[i] >= 'A' && alpha[i] <= 'Z') || (alpha[i] >= 'a' && alpha[i] <= 'z')) {
+                    onlyAlph = alpha[i];
+                } else {
+                    if ((alpha[k] < 'A' && alpha[k] > 'Z') || (alpha[k] < 'a' && alpha[k] > 'z')) {
 
+
+                    }
+                }
+
+                char[] alphaArray = new char[j - k];
+                System.out.println(alphaArray);
             }
+
+
         }
 
+            return alpha;}
 
 
     }
-}
+
